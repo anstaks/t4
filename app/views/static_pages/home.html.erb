@@ -1,0 +1,24 @@
+<div class="big-photo">
+  <%= form_for @image do |f| %>
+    <div class="container">
+      <p class="big-text">Share. Track. Comment.</p>
+      <div class="invisible-outer">
+        <%= f.file_field :source, class:"invisible-file" %>
+      </div>
+      <p class="small-text">30,000+ online users uploaded, tracked and commented 1,500,000,000+ pixels</p>
+    </div>
+  <% end %>
+</div>
+
+<div class="potential">
+  <div class="container">
+    <p class="potential-big">@Glance allows you to share, track and<br>comment graphic files you uploaded</p>
+    <div class="potential-blocks">
+      <div class="potential-float float-1">Upload photo, mockup or screenshot</div>
+      <div class="potential-float float-2">Invite people to review and discuss it</div>
+      <div class="potential-float float-3">Discuss file, track versions and comments</div>
+    </div>
+  </div>
+</div>
+
+<%= render 'shared/popup' %>

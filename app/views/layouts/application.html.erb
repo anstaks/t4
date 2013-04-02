@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Glance</title>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="navbar navbar-static-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <%= link_to "@Glance", root_path, class: "brand" %>
+          <nav>
+            <ul class="nav pull-right">
+              <li><%= link_to "About",    '#' %></li>
+              <li><%= link_to "Contacts",    '#' %></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log in <b class="caret"></b></a>
+                <div class="dropdown-menu">
+                  <br><br><br>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <%= yield %>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-menu">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Faq</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar navbar-static-top navbar-inverse">
+        <div class="navbar-inner">
+          <div class="container">
+            <div class="pull-right">
+
+              <p class="navbar-text">2013 &copy; AtGlance</p>
+            </div>
+            <%= link_to "@Glance", root_path, class: "brand" %>
+            <p class="navbar-text">Share. Track. Comment.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+</html>

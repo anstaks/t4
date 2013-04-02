@@ -1,0 +1,163 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap";
+@import "bootstrap-responsive";
+@import "compass";
+
+.main {
+  min-height: 600px;
+}
+.big-photo {
+  background:asset-url("big-photo.jpg", image) center -370px no-repeat;
+  @include background-size(2000px);
+
+  .container {
+    width:785px;
+    height:400px;
+  }
+  .big-text {
+    color:#fff;
+    font:bold 30px Helvetica;
+    @include single-text-shadow(1px,1px,1px,false,#465e6f);
+    text-align:center;
+    margin-top:100px;
+  }
+  .small-text {
+    color:#fff;
+    font:italic 16px Helvetica;
+    @include single-text-shadow(1px,1px,1px,false,#465e6f);
+    position:relative;
+    margin:-35px 0 0 30px;
+  }
+}
+
+.invisible-file {
+  font-size: 200px;
+  height: 130px;
+  @include opacity(0);
+}
+
+.invisible-outer {
+  top:-40px;
+  position:relative;
+  overflow: hidden;
+  width: 785px;
+  height: 130px;
+  background:asset-url("browse.png", image) left top no-repeat;
+}
+
+.potential {
+  .container {
+    width:785px;
+  }
+  .potential-big {
+    color:#414141;
+    font:36px Helvetica;
+    text-align:center;
+  }
+}
+
+.potential-blocks {
+  @extend .clearfix;
+  background:transparent asset-url('potential.png',image) left top no-repeat;
+  width:785px;
+  height:115px;
+  margin:30px auto 50px;
+  .potential-float {
+    float:left;
+    color:#7C7C7C;
+    font:italic 17px/20px Helvetica;
+    margin-top:14px;
+    width:130px;
+    &.float-1 {
+      margin-left:113px;
+    }
+    &.float-2 {
+      margin-left:128px;
+    }
+    &.float-3 {
+      margin-left:150px;
+    }
+  }
+}
+
+.footer {
+  border-top:1px solid #e5e5e5;
+  .footer-menu {
+    text-align:center;
+    text-transform: uppercase;
+    li {
+      font:13px Helvetica;
+      display:inline-block;
+      padding:20px 20px 15px 20px;
+      a {
+        color:#777;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.popup-loading {
+  display:none;
+  padding:30px 50px;
+  width:900px;
+  background: #fff;
+  position:absolute;
+  top:140px;
+  left:50%;
+  margin:0 0 0 -450px;
+  @include border-radius(15px, 15px);
+  @include single-box-shadow(#555,0,0,8px,2px,false);
+  .popup-close {
+    float:right;
+    font:bold 30px Arial;
+    color:#C5C5C5;
+    padding:10px 15px;
+    margin:-10px -30px 0 0;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  h2 {margin-top:0;}
+  .upload {
+    border:10px solid #000;
+    position: relative;
+    height:50px;
+    font:23px Helvetica;
+    @include border-radius(8px, 8px);
+    .upload-left {
+      position:absolute;
+      left:0;
+      margin:10px;
+    }
+    .percent {
+      position:absolute;
+      right:0;
+      margin:10px;
+    }
+  }
+  .prog {
+    overflow: hidden;
+    height: 50px;
+    background-color: #fff;
+    .bar {
+      width: 0%;
+      height: 100%;
+      color: #fff;
+      float: left;
+      background-color: #1071C1;
+      position:relative;
+      z-index:5;
+      span {
+        color:#fff;
+      }
+    }
+  }
+
+}

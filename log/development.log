@@ -1,0 +1,569 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-29 23:59:03 +0300
+Processing by StaticPagesController#home as HTML
+Mysql2::Error: Table 'glance_dev.images' doesn't exist: SHOW FULL FIELDS FROM `images`
+Completed 500 Internal Server Error in 52ms
+
+ActiveRecord::StatementInvalid - Mysql2::Error: Table 'glance_dev.images' doesn't exist: SHOW FULL FIELDS FROM `images`:
+  (gem) activerecord-3.2.13/lib/active_record/connection_adapters/abstract_adapter.rb:291:in `translate_exception'
+  (gem) activerecord-3.2.13/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:595:in `translate_exception'
+  (gem) activerecord-3.2.13/lib/active_record/connection_adapters/abstract_adapter.rb:284:in `rescue in log'
+  (gem) activerecord-3.2.13/lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+  (gem) activerecord-3.2.13/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:245:in `execute'
+  (gem) activerecord-3.2.13/lib/active_record/connection_adapters/mysql2_adapter.rb:211:in `execute'
+  (gem) activerecord-3.2.13/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:259:in `execute_and_free'
+  (gem) activerecord-3.2.13/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:426:in `columns'
+  (gem) activerecord-3.2.13/lib/active_record/connection_adapters/schema_cache.rb:12:in `block in initialize'
+  (gem) activerecord-3.2.13/lib/active_record/model_schema.rb:228:in `columns'
+  (gem) activerecord-3.2.13/lib/active_record/model_schema.rb:243:in `column_defaults'
+  (gem) activerecord-3.2.13/lib/active_record/base.rb:482:in `initialize'
+  app/controllers/static_pages_controller.rb:3:in `home'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  (gem) actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  (gem) actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__3390252939191725394__process_action__2807115959382991369__callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  (gem) actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  (gem) activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+  (gem) activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  (gem) activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  (gem) activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  (gem) actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+  (gem) actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+  (gem) actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  (gem) actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+  (gem) actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  (gem) actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+  (gem) journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+  (gem) journey-1.0.4/lib/journey/router.rb:56:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  (gem) rack-1.4.5/lib/rack/etag.rb:23:in `call'
+  (gem) rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+  (gem) rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+  (gem) rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  (gem) activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+  (gem) activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__3627252771220995112__call__617963515444705385__callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  (gem) better_errors-0.7.2/lib/better_errors/middleware.rb:84:in `protected_app_call'
+  (gem) better_errors-0.7.2/lib/better_errors/middleware.rb:79:in `better_errors_call'
+  (gem) better_errors-0.7.2/lib/better_errors/middleware.rb:56:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  (gem) railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+  (gem) railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+  (gem) activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+  (gem) railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+  (gem) quiet_assets-1.0.2/lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  (gem) rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+  (gem) rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+  (gem) activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  (gem) rack-1.4.5/lib/rack/lock.rb:15:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+  (gem) railties-3.2.13/lib/rails/engine.rb:479:in `call'
+  (gem) railties-3.2.13/lib/rails/application.rb:223:in `call'
+  (gem) rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+  (gem) railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+  (gem) thin-1.5.1/lib/thin/connection.rb:81:in `block in pre_process'
+  (gem) thin-1.5.1/lib/thin/connection.rb:79:in `pre_process'
+  (gem) thin-1.5.1/lib/thin/connection.rb:54:in `process'
+  (gem) thin-1.5.1/lib/thin/connection.rb:39:in `receive_data'
+  (gem) eventmachine-1.0.3/lib/eventmachine.rb:187:in `run'
+  (gem) thin-1.5.1/lib/thin/backends/base.rb:63:in `start'
+  (gem) thin-1.5.1/lib/thin/server.rb:159:in `start'
+  (gem) rack-1.4.5/lib/rack/handler/thin.rb:13:in `run'
+  (gem) rack-1.4.5/lib/rack/server.rb:268:in `start'
+  (gem) railties-3.2.13/lib/rails/commands/server.rb:70:in `start'
+  (gem) railties-3.2.13/lib/rails/commands.rb:55:in `block in <top (required)>'
+  (gem) railties-3.2.13/lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `<main>'
+  script/rails:0:in `<main>'
+
+
+
+Started POST "/__better_errors/70298758961940/variables" for 127.0.0.1 at 2013-03-29 23:59:03 +0300
+Connecting to database specified by database.yml
+  [1m[36m (8.5ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (8.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (3.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateDocuments (20130329080840)
+  [1m[35m (5.8ms)[0m  CREATE TABLE `documents` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `code` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130329080840')[0m
+Migrating to CreateImages (20130329080936)
+  [1m[35m (5.5ms)[0m  CREATE TABLE `images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `source` varchar(255), `document_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130329080936')[0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-29 23:59:24 +0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (31.3ms)
+Compiled ie.css  (11ms)  (pid 82814)
+Compiled print.css  (1ms)  (pid 82814)
+Compiled screen.css  (1ms)  (pid 82814)
+Compiled static_pages.css  (4046ms)  (pid 82814)
+Compiled application.css  (4148ms)  (pid 82814)
+Compiled jquery.js  (1ms)  (pid 82814)
+Compiled jquery_ujs.js  (0ms)  (pid 82814)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 82814)
+Compiled jquery-fileupload/vendor/jquery.ui.widget.js  (0ms)  (pid 82814)
+Compiled jquery-fileupload/jquery.iframe-transport.js  (0ms)  (pid 82814)
+Compiled jquery-fileupload/jquery.fileupload.js  (0ms)  (pid 82814)
+Compiled jquery-fileupload/basic.js  (82ms)  (pid 82814)
+Compiled jquery-fileupload/vendor/tmpl.js  (0ms)  (pid 82814)
+Compiled static_pages.js  (59ms)  (pid 82814)
+Compiled application.js  (308ms)  (pid 82814)
+Completed 200 OK in 4730ms (Views: 4714.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-30 00:00:38 +0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/images" for 127.0.0.1 at 2013-03-30 00:00:48 +0300
+Processing by ImagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QZOW+VTtzyT7lDx/BgvVKBnhSkdN++4kaWhxh16ohFo=", "image"=>{"source"=>#<ActionDispatch::Http::UploadedFile:0x007fdf6920dc08 @original_filename="OS-X-Mountain-Lion.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"image[source]\"; filename=\"OS-X-Mountain-Lion.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20130330-82814-1epxo8q>>}}
+Completed 500 Internal Server Error in 16ms
+
+Errno::ENOENT - No such file or directory - identify -quiet -ping /tmp/mini_magick20130330-82814-qk13qu.png:
+  (gem) subexec-0.2.2/lib/subexec.rb:71:in `spawn'
+  (gem) subexec-0.2.2/lib/subexec.rb:55:in `run!'
+  (gem) subexec-0.2.2/lib/subexec.rb:41:in `run'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:410:in `run'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:404:in `run_command'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:201:in `valid?'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:166:in `create'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:76:in `read'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:137:in `block in open'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:136:in `open'
+  (gem) carrierwave-0.8.0/lib/carrierwave/processing/mini_magick.rb:259:in `manipulate!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/processing/mini_magick.rb:152:in `resize_to_fit'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/processing.rb:85:in `block in process!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/processing.rb:81:in `process!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/callbacks.rb:18:in `block in with_callbacks'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/callbacks.rb:18:in `with_callbacks'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/cache.rb:122:in `cache!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/versions.rb:236:in `block in cache_versions!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/versions.rb:221:in `cache_versions!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/callbacks.rb:18:in `block in with_callbacks'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/callbacks.rb:18:in `with_callbacks'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/cache.rb:122:in `cache!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/mount.rb:327:in `cache'
+  (gem) carrierwave-0.8.0/lib/carrierwave/mount.rb:179:in `source='
+  (gem) carrierwave-0.8.0/lib/carrierwave/orm/activerecord.rb:38:in `source='
+  (gem) activerecord-3.2.13/lib/active_record/attribute_assignment.rb:85:in `block in assign_attributes'
+  (gem) activerecord-3.2.13/lib/active_record/attribute_assignment.rb:78:in `assign_attributes'
+  (gem) activerecord-3.2.13/lib/active_record/base.rb:498:in `initialize'
+  (gem) activerecord-3.2.13/lib/active_record/persistence.rb:44:in `create'
+  app/controllers/images_controller.rb:3:in `create'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  (gem) actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  (gem) actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__3833805976596811382__process_action__4206676504177136763__callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  (gem) actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  (gem) activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+  (gem) activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  (gem) activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  (gem) activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  (gem) actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+  (gem) actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+  (gem) actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  (gem) actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+  (gem) actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  (gem) actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+  (gem) journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+  (gem) journey-1.0.4/lib/journey/router.rb:56:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  (gem) rack-1.4.5/lib/rack/etag.rb:23:in `call'
+  (gem) rack-1.4.5/lib/rack/conditionalget.rb:35:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+  (gem) rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+  (gem) rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  (gem) activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+  (gem) activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__3627252771220995112__call__617963515444705385__callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  (gem) better_errors-0.7.2/lib/better_errors/middleware.rb:84:in `protected_app_call'
+  (gem) better_errors-0.7.2/lib/better_errors/middleware.rb:79:in `better_errors_call'
+  (gem) better_errors-0.7.2/lib/better_errors/middleware.rb:56:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  (gem) railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+  (gem) railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+  (gem) activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+  (gem) railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+  (gem) quiet_assets-1.0.2/lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  (gem) rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+  (gem) rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+  (gem) activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  (gem) rack-1.4.5/lib/rack/lock.rb:15:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+  (gem) railties-3.2.13/lib/rails/engine.rb:479:in `call'
+  (gem) railties-3.2.13/lib/rails/application.rb:223:in `call'
+  (gem) rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+  (gem) railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+  (gem) thin-1.5.1/lib/thin/connection.rb:81:in `block in pre_process'
+  (gem) thin-1.5.1/lib/thin/connection.rb:79:in `pre_process'
+  (gem) thin-1.5.1/lib/thin/connection.rb:54:in `process'
+  (gem) thin-1.5.1/lib/thin/connection.rb:39:in `receive_data'
+  (gem) eventmachine-1.0.3/lib/eventmachine.rb:187:in `run'
+  (gem) thin-1.5.1/lib/thin/backends/base.rb:63:in `start'
+  (gem) thin-1.5.1/lib/thin/server.rb:159:in `start'
+  (gem) rack-1.4.5/lib/rack/handler/thin.rb:13:in `run'
+  (gem) rack-1.4.5/lib/rack/server.rb:268:in `start'
+  (gem) railties-3.2.13/lib/rails/commands/server.rb:70:in `start'
+  (gem) railties-3.2.13/lib/rails/commands.rb:55:in `block in <top (required)>'
+  (gem) railties-3.2.13/lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `<main>'
+  script/rails:0:in `<main>'
+
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-30 00:00:54 +0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 120ms (Views: 119.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/images" for 127.0.0.1 at 2013-03-30 00:01:07 +0300
+Processing by ImagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QZOW+VTtzyT7lDx/BgvVKBnhSkdN++4kaWhxh16ohFo=", "image"=>{"source"=>#<ActionDispatch::Http::UploadedFile:0x007fdf694f9700 @original_filename="OS-X-Mountain-Lion.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"image[source]\"; filename=\"OS-X-Mountain-Lion.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20130330-82814-15d218a>>}}
+Completed 500 Internal Server Error in 11ms
+
+Errno::ENOENT - No such file or directory - identify -quiet -ping /tmp/mini_magick20130330-82814-16b2no6.png:
+  (gem) subexec-0.2.2/lib/subexec.rb:71:in `spawn'
+  (gem) subexec-0.2.2/lib/subexec.rb:55:in `run!'
+  (gem) subexec-0.2.2/lib/subexec.rb:41:in `run'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:410:in `run'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:404:in `run_command'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:201:in `valid?'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:166:in `create'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:76:in `read'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:137:in `block in open'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:136:in `open'
+  (gem) carrierwave-0.8.0/lib/carrierwave/processing/mini_magick.rb:259:in `manipulate!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/processing/mini_magick.rb:152:in `resize_to_fit'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/processing.rb:85:in `block in process!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/processing.rb:81:in `process!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/callbacks.rb:18:in `block in with_callbacks'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/callbacks.rb:18:in `with_callbacks'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/cache.rb:122:in `cache!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/versions.rb:236:in `block in cache_versions!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/versions.rb:221:in `cache_versions!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/callbacks.rb:18:in `block in with_callbacks'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/callbacks.rb:18:in `with_callbacks'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/cache.rb:122:in `cache!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/mount.rb:327:in `cache'
+  (gem) carrierwave-0.8.0/lib/carrierwave/mount.rb:179:in `source='
+  (gem) carrierwave-0.8.0/lib/carrierwave/orm/activerecord.rb:38:in `source='
+  (gem) activerecord-3.2.13/lib/active_record/attribute_assignment.rb:85:in `block in assign_attributes'
+  (gem) activerecord-3.2.13/lib/active_record/attribute_assignment.rb:78:in `assign_attributes'
+  (gem) activerecord-3.2.13/lib/active_record/base.rb:498:in `initialize'
+  (gem) activerecord-3.2.13/lib/active_record/persistence.rb:44:in `create'
+  app/controllers/images_controller.rb:3:in `create'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  (gem) actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  (gem) actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__3833805976596811382__process_action__4206676504177136763__callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  (gem) actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  (gem) activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+  (gem) activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  (gem) activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  (gem) activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  (gem) actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+  (gem) actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+  (gem) actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  (gem) actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+  (gem) actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  (gem) actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+  (gem) journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+  (gem) journey-1.0.4/lib/journey/router.rb:56:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  (gem) rack-1.4.5/lib/rack/etag.rb:23:in `call'
+  (gem) rack-1.4.5/lib/rack/conditionalget.rb:35:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+  (gem) rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+  (gem) rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  (gem) activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+  (gem) activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__3627252771220995112__call__617963515444705385__callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  (gem) better_errors-0.7.2/lib/better_errors/middleware.rb:84:in `protected_app_call'
+  (gem) better_errors-0.7.2/lib/better_errors/middleware.rb:79:in `better_errors_call'
+  (gem) better_errors-0.7.2/lib/better_errors/middleware.rb:56:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  (gem) railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+  (gem) railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+  (gem) activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+  (gem) railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+  (gem) quiet_assets-1.0.2/lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  (gem) rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+  (gem) rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+  (gem) activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  (gem) rack-1.4.5/lib/rack/lock.rb:15:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+  (gem) railties-3.2.13/lib/rails/engine.rb:479:in `call'
+  (gem) railties-3.2.13/lib/rails/application.rb:223:in `call'
+  (gem) rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+  (gem) railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+  (gem) thin-1.5.1/lib/thin/connection.rb:81:in `block in pre_process'
+  (gem) thin-1.5.1/lib/thin/connection.rb:79:in `pre_process'
+  (gem) thin-1.5.1/lib/thin/connection.rb:54:in `process'
+  (gem) thin-1.5.1/lib/thin/connection.rb:39:in `receive_data'
+  (gem) eventmachine-1.0.3/lib/eventmachine.rb:187:in `run'
+  (gem) thin-1.5.1/lib/thin/backends/base.rb:63:in `start'
+  (gem) thin-1.5.1/lib/thin/server.rb:159:in `start'
+  (gem) rack-1.4.5/lib/rack/handler/thin.rb:13:in `run'
+  (gem) rack-1.4.5/lib/rack/server.rb:268:in `start'
+  (gem) railties-3.2.13/lib/rails/commands/server.rb:70:in `start'
+  (gem) railties-3.2.13/lib/rails/commands.rb:55:in `block in <top (required)>'
+  (gem) railties-3.2.13/lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `<main>'
+  script/rails:0:in `<main>'
+
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-30 00:03:31 +0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 162ms (Views: 161.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/images" for 127.0.0.1 at 2013-03-30 00:03:35 +0300
+Processing by ImagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QZOW+VTtzyT7lDx/BgvVKBnhSkdN++4kaWhxh16ohFo=", "image"=>{"source"=>#<ActionDispatch::Http::UploadedFile:0x007fdf6c7739d8 @original_filename="1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"image[source]\"; filename=\"1.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20130330-82814-dy3sur>>}}
+Completed 500 Internal Server Error in 11ms
+
+Errno::ENOENT - No such file or directory - identify -quiet -ping /tmp/mini_magick20130330-82814-nevupk.png:
+  (gem) subexec-0.2.2/lib/subexec.rb:71:in `spawn'
+  (gem) subexec-0.2.2/lib/subexec.rb:55:in `run!'
+  (gem) subexec-0.2.2/lib/subexec.rb:41:in `run'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:410:in `run'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:404:in `run_command'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:201:in `valid?'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:166:in `create'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:76:in `read'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:137:in `block in open'
+  (gem) mini_magick-3.5.0/lib/mini_magick.rb:136:in `open'
+  (gem) carrierwave-0.8.0/lib/carrierwave/processing/mini_magick.rb:259:in `manipulate!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/processing/mini_magick.rb:152:in `resize_to_fit'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/processing.rb:85:in `block in process!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/processing.rb:81:in `process!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/callbacks.rb:18:in `block in with_callbacks'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/callbacks.rb:18:in `with_callbacks'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/cache.rb:122:in `cache!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/versions.rb:236:in `block in cache_versions!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/versions.rb:221:in `cache_versions!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/callbacks.rb:18:in `block in with_callbacks'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/callbacks.rb:18:in `with_callbacks'
+  (gem) carrierwave-0.8.0/lib/carrierwave/uploader/cache.rb:122:in `cache!'
+  (gem) carrierwave-0.8.0/lib/carrierwave/mount.rb:327:in `cache'
+  (gem) carrierwave-0.8.0/lib/carrierwave/mount.rb:179:in `source='
+  (gem) carrierwave-0.8.0/lib/carrierwave/orm/activerecord.rb:38:in `source='
+  (gem) activerecord-3.2.13/lib/active_record/attribute_assignment.rb:85:in `block in assign_attributes'
+  (gem) activerecord-3.2.13/lib/active_record/attribute_assignment.rb:78:in `assign_attributes'
+  (gem) activerecord-3.2.13/lib/active_record/base.rb:498:in `initialize'
+  (gem) activerecord-3.2.13/lib/active_record/persistence.rb:44:in `create'
+  app/controllers/images_controller.rb:3:in `create'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  (gem) actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  (gem) actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__3833805976596811382__process_action__4206676504177136763__callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  (gem) actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  (gem) activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+  (gem) activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  (gem) activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  (gem) activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  (gem) actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+  (gem) actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+  (gem) actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+  (gem) actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  (gem) actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+  (gem) actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  (gem) actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+  (gem) journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+  (gem) journey-1.0.4/lib/journey/router.rb:56:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  (gem) rack-1.4.5/lib/rack/etag.rb:23:in `call'
+  (gem) rack-1.4.5/lib/rack/conditionalget.rb:35:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+  (gem) rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+  (gem) rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  (gem) activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+  (gem) activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__3627252771220995112__call__617963515444705385__callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  (gem) activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  (gem) better_errors-0.7.2/lib/better_errors/middleware.rb:84:in `protected_app_call'
+  (gem) better_errors-0.7.2/lib/better_errors/middleware.rb:79:in `better_errors_call'
+  (gem) better_errors-0.7.2/lib/better_errors/middleware.rb:56:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  (gem) railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+  (gem) railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+  (gem) activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+  (gem) railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+  (gem) quiet_assets-1.0.2/lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  (gem) rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+  (gem) rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+  (gem) activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  (gem) rack-1.4.5/lib/rack/lock.rb:15:in `call'
+  (gem) actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+  (gem) railties-3.2.13/lib/rails/engine.rb:479:in `call'
+  (gem) railties-3.2.13/lib/rails/application.rb:223:in `call'
+  (gem) rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+  (gem) railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+  (gem) thin-1.5.1/lib/thin/connection.rb:81:in `block in pre_process'
+  (gem) thin-1.5.1/lib/thin/connection.rb:79:in `pre_process'
+  (gem) thin-1.5.1/lib/thin/connection.rb:54:in `process'
+  (gem) thin-1.5.1/lib/thin/connection.rb:39:in `receive_data'
+  (gem) eventmachine-1.0.3/lib/eventmachine.rb:187:in `run'
+  (gem) thin-1.5.1/lib/thin/backends/base.rb:63:in `start'
+  (gem) thin-1.5.1/lib/thin/server.rb:159:in `start'
+  (gem) rack-1.4.5/lib/rack/handler/thin.rb:13:in `run'
+  (gem) rack-1.4.5/lib/rack/server.rb:268:in `start'
+  (gem) railties-3.2.13/lib/rails/commands/server.rb:70:in `start'
+  (gem) railties-3.2.13/lib/rails/commands.rb:55:in `block in <top (required)>'
+  (gem) railties-3.2.13/lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `<main>'
+  script/rails:0:in `<main>'
+
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-30 00:06:33 +0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 249ms (Views: 193.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/images" for 127.0.0.1 at 2013-03-30 00:06:36 +0300
+Processing by ImagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QZOW+VTtzyT7lDx/BgvVKBnhSkdN++4kaWhxh16ohFo=", "image"=>{"source"=>#<ActionDispatch::Http::UploadedFile:0x007fa84a0a3260 @original_filename="1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"image[source]\"; filename=\"1.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20130330-83189-p3z0lo>>}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO `images` (`created_at`, `document_id`, `source`, `updated_at`) VALUES ('2013-03-29 21:06:36', NULL, '1.png', '2013-03-29 21:06:36')
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mImage Load (0.2ms)[0m  SELECT `images`.* FROM `images` ORDER BY `images`.`id` DESC LIMIT 1
+  Rendered images/_image.html.erb (4.0ms)
+  Rendered images/create.js.erb (9.2ms)
+Completed 200 OK in 431ms (Views: 12.8ms | ActiveRecord: 4.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-31 09:14:09 +0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 275ms (Views: 211.5ms | ActiveRecord: 8.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-02 10:20:12 +0300
+Processing by StaticPagesController#home as HTML
+  Rendered shared/_popup.html.erb (0.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.9ms)
+Compiled static_pages.css  (2953ms)  (pid 3879)
+Compiled application.css  (1ms)  (pid 3879)
+Compiled static_pages.js  (92ms)  (pid 3879)
+Compiled application.js  (13ms)  (pid 3879)
+Completed 200 OK in 3399ms (Views: 3336.6ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-02 10:20:25 +0300
+Processing by StaticPagesController#home as HTML
+  Rendered shared/_popup.html.erb (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 117ms (Views: 116.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/images" for 127.0.0.1 at 2013-04-02 10:20:46 +0300
+Processing by ImagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PHnVwzZqqhlDpsWqRU+hqHfj1rXFp7rGiZgBlnfA8h4=", "image"=>{"source"=>#<ActionDispatch::Http::UploadedFile:0x007fbc978f2bf8 @original_filename="OS-X-Mountain-Lion.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"image[source]\"; filename=\"OS-X-Mountain-Lion.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/var/folders/2h/3qk9k3hx4yb9hx4dysbkj20m0000gn/T/RackMultipart20130402-3879-u4dvpb>>}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `images` (`created_at`, `document_id`, `source`, `updated_at`) VALUES ('2013-04-02 07:20:47', NULL, 'OS-X-Mountain-Lion.png', '2013-04-02 07:20:47')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  Rendered images/create.js.erb (0.4ms)
+Completed 200 OK in 500ms (Views: 4.2ms | ActiveRecord: 3.7ms)

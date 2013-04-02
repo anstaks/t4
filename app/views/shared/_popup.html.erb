@@ -1,0 +1,35 @@
+<div id="popup-loading" class="popup-loading">
+  <a class="popup-close" id="popup-close" href="#">X</a>
+  <h2>Upload and share</h2>
+  <div id="progressbar"></div>
+  <script id="template-upload" type="text/x-tmpl">
+    <div class="upload">
+      <span class="upload-left">{%=o.name%} is being uploaded...</span> <span class="percent"></span>
+      <div class="prog"><div class="bar" style="width: 0%">
+        <span class="upload-left">{%=o.name%} is being uploaded...</span>
+        <span class="percent"></span>
+      </div></div>
+    </div>
+  </script>
+  <br>
+  <h4>Link to your file:</h4>
+  <div><a href="#">http://atglance.com/link</a></div>
+  <br>
+  <h4>Invited people:</h4>
+  <ul>
+    <li>anstak@gmail.com</li>
+    <li>vasya@gmail.com</li>
+    <li>masha@gmail.com</li>
+  </ul>
+  <br>
+  <h4>Add people by email:</h4>
+  <div><input value="Type email address here..."> <button>Add</button></div>
+  <br>
+  <h4>Introduce yourself:</h4>
+  <div>
+    <input value="Your email"><br><br>
+    <textarea>Type message for reviewers</textarea>
+  </div>
+
+  <input type="button" value="SHARE">
+</div>
